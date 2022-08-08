@@ -195,7 +195,7 @@
         // 댓글을 작성하고 post 요청을 보내 저장합니다.
         function writeReply() {
             let postid = location.href.split("id=")[1]; //[앞부분] [2] localhos/modify.html?id=12&address=seoul&
-            var username = [${username}];
+            var username = [[${username}]];
             let reply = $('#reply').val();
             if (isValidContents(reply) == false) {
                 return;
